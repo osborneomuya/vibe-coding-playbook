@@ -52,6 +52,14 @@
 | [MCP 服务配置](tools/mcp-servers.json) | Context7 / Exa / Tavily / AWSLabs Document Loader / Ace Tool 配置模板 |
 | [MCP 服务说明](tools/mcp-servers.md) | 每个 MCP Server 的用途、核心能力与配置方式 |
 
+### 与 AI 深度交流
+
+Vibe Coding 不只是让 AI 写代码，更重要的是**与 AI 讨论问题、理清思路**。正如孙宇晨孙哥所说，要学会和 AI 交流。
+
+日常开发中，我用 [Gemini](https://gemini.google.com) 来讨论技术方案、分析问题根因。如果你也有这个需求，推荐试试我开发的工具：
+
+🔗 **[Talkio](https://github.com/llt22/talkio)** - 一个专注于与 AI 深度对话的工具
+
 ---
 
 ## 目录结构
