@@ -34,6 +34,7 @@ vibe-coding-playbook/
 | 文件 | 说明 |
 |------|------|
 | [复杂度管理与人机协作 SOP](experiences/vibe-coding-sop.md) | 四阶段 SOP：前置基建 → 过程控制 → 质量闸口 → 维护修复 |
+| [AI 百分之百还原设计稿](experiences/design-to-code.md) | 设计稿转代码完整流程：工具转码 → AI 重构 → 像素对比验收 |
 
 ### 工具配置
 
