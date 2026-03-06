@@ -20,6 +20,15 @@
         "EXA_API_KEY": "<your-exa-api-key>"
       }
     },
+    "tavily": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.tavily.com/mcp/?tavilyApiKey=<your-tavily-api-key>"
+      ],
+      "env": {}
+    },
     "ace-tool": {
       "command": "ace-tool",
       "args": [

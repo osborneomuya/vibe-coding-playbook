@@ -36,6 +36,26 @@
 
 ---
 
+## Tavily
+
+| 项目 | 说明 |
+|------|------|
+| **用途** | 为 AI 提供**实时 Web 搜索**能力，专为 AI Agent 场景优化 |
+| **协议** | 远程 MCP（通过 `mcp-remote` 代理连接） |
+| **来源** | [官网](https://tavily.com) · [MCP 文档](https://docs.tavily.com) |
+| **API Key** | **必需**。在 [tavily.com](https://tavily.com) 注册获取 |
+
+**核心能力**：
+- **AI 优化搜索**：搜索结果专为 LLM 消费设计，返回结构化、去噪后的内容
+- **实时性**：获取最新的互联网信息，弥补 LLM 训练数据截止的问题
+- **远程 MCP**：无需本地安装服务端，通过 HTTP 直连 Tavily 云端
+
+**典型场景**：AI Agent 需要实时信息辅助决策、查找最新技术文档、获取时效性内容。
+
+**与 Exa 的区别**：Tavily 更侧重 AI Agent 集成，搜索结果更结构化；Exa 的网页抓取和内容提取能力更强。可根据需要选择其一或同时使用。
+
+---
+
 ## Ace Tool
 
 | 项目 | 说明 |
@@ -59,6 +79,7 @@
 1. 复制 `mcp-servers.json` 的内容
 2. 将占位符替换为你的真实密钥：
    - `<your-exa-api-key>` → Exa API Key
+   - `<your-tavily-api-key>` → Tavily API Key
    - `<your-ace-token>` → Ace Tool Token
 3. 粘贴到你的 AI IDE 对应配置文件中：
    - **Windsurf**：`~/.codeium/windsurf/mcp_config.json`

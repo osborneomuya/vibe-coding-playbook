@@ -39,5 +39,5 @@ vibe-coding-playbook/
 
 | 文件 | 说明 |
 |------|------|
-| [MCP 服务配置](tools/mcp-servers.json) | MCP Server 配置模板（Context7 / Exa / Ace Tool），需自行填入 API Key |
+| [MCP 服务配置](tools/mcp-servers.json) | MCP Server 配置模板（Context7 / Exa / Tavily / Ace Tool），需自行填入 API Key |
 | [MCP 服务说明](tools/mcp-servers.md) | 每个 MCP Server 的用途、核心能力、获取密钥方式及配置说明 |
