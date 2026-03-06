@@ -15,6 +15,19 @@
 
 ---
 
+## 快速开始
+
+- **第一步**：先把 [AI IDE 全局规则](prompts/global-rules.md) 放进你的 Windsurf / Cursor 全局提示词里
+- **第二步**：按场景选择工作流
+  - 前端任务看 [前端 Vibe 工作流](prompts/frontend-vibe-workflow.md)
+  - 后端任务看 [后端 Vibe 工作流](prompts/backend-vibe-workflow.md)
+- **第三步**：按交付场景补上下文
+  - 有设计稿 / 无设计稿，看 [AI 高质量交付前端 UI](experiences/design-to-code.md)
+  - 需要过程规范和复杂度控制，看 [复杂度管理与人机协作 SOP](experiences/vibe-coding-sop.md)
+- **第四步**：需要实时文档、搜索、代码索引能力时，按 [MCP 服务配置](tools/mcp-servers.json) 和 [MCP 服务说明](tools/mcp-servers.md) 配置工具
+
+---
+
 ## 内容索引
 
 ### 提示词
@@ -36,8 +49,8 @@
 
 | 文件 | 说明 |
 |------|------|
-| [MCP 服务配置](tools/mcp-servers.json) | Context7 / Exa / Tavily / Ace Tool 配置模板 |
-| [MCP 服务说明](tools/mcp-servers.md) | 每个 MCP Server 的用途、核心能力、密钥获取方式 |
+| [MCP 服务配置](tools/mcp-servers.json) | Context7 / Exa / Tavily / AWSLabs Document Loader / Ace Tool 配置模板 |
+| [MCP 服务说明](tools/mcp-servers.md) | 每个 MCP Server 的用途、核心能力与配置方式 |
 
 ---
 
@@ -47,6 +60,5 @@
 vibe-coding-playbook/
 ├── prompts/        # 提示词（全局规则、前端/后端工作流）
 ├── experiences/    # 实战经验（SOP、设计稿还原等）
-├── templates/      # 可复用模板（待补充）
 └── tools/          # 工具配置（MCP Server 等）
 ```

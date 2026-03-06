@@ -1,10 +1,11 @@
 # MCP 服务配置说明
-
-> 本目录存放 AI IDE（Windsurf / Cursor 等）的 MCP Server 配置模板。
-> 配置文件：[mcp-servers.json](./mcp-servers.json)
-
----
-
+ 
+ > 本目录存放 AI IDE（Windsurf / Cursor 等）的 MCP Server 配置模板。
+ > 配置文件：[mcp-servers.json](./mcp-servers.json)
+ > 以下 MCP Server **按需配置即可**，不必一次性全部启用。
+ 
+ ---
+ 
 ## Context7
 
 | 项目 | 说明 |
@@ -56,6 +57,25 @@
 
 ---
 
+## AWSLabs Document Loader
+
+| 项目 | 说明 |
+|------|------|
+| **用途** | 为 AI 提供**文档加载**能力，将文档内容接入上下文 |
+| **包名** | `awslabs.document-loader-mcp-server` |
+| **运行方式** | `uvx awslabs.document-loader-mcp-server@latest` |
+| **来源** | [官方文档](https://awslabs.github.io/mcp/servers/document-loader-mcp-server) |
+| **默认配置** | 官方最小配置仅保留 `FASTMCP_LOG_LEVEL` |
+
+**核心能力**：
+- **文档接入**：为 AI 提供文档加载能力
+- **官方最小配置**：按官方示例可直接运行，无需额外目录参数
+- **轻量运行**：通过 `uvx` 直接启动，无需手动安装独立服务
+
+**典型场景**：需要把文档型上下文接入 AI 时，可按官方最小配置直接启用；更细的能力和扩展参数以官方文档为准。
+
+---
+
 ## Ace Tool
 
 | 项目 | 说明 |
@@ -77,12 +97,13 @@
 ## 配置方式
 
 1. 复制 `mcp-servers.json` 的内容
-2. 将占位符替换为你的真实密钥：
+2. 将占位符替换为你的真实配置：
    - `<your-exa-api-key>` → Exa API Key
    - `<your-tavily-api-key>` → Tavily API Key
    - `<your-ace-token>` → Ace Tool Token
-3. 粘贴到你的 AI IDE 对应配置文件中：
+3. 如使用 AWSLabs Document Loader，请确认本机已安装 `uv` / `uvx`
+4. 粘贴到你的 AI IDE 对应配置文件中：
    - **Windsurf**：`~/.codeium/windsurf/mcp_config.json`
    - **Cursor**：`~/.cursor/mcp.json`
 
-> ⚠️ **安全提醒**：永远不要将包含真实 API Key 的配置文件提交到 Git 仓库。
+> ⚠️ **安全提醒**：永远不要将包含真实 API Key、本地绝对路径或其他敏感配置的文件提交到 Git 仓库。

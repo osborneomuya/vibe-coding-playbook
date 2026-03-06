@@ -29,6 +29,17 @@
       ],
       "env": {}
     },
+    "awslabs.document-loader-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.document-loader-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
     "ace-tool": {
       "command": "ace-tool",
       "args": [
